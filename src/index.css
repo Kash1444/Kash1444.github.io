@@ -1,0 +1,3 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap');
+:root { font-family:'Manrope',sans-serif; color:#e8e7e3; background:#111210; font-synthesis:none; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; }
+* { box-sizing:border-box; } html { scroll-behavior:smooth; background:#111210; } body { margin:0; min-width:320px; } button,a { font:inherit; } a { color:inherit; }
