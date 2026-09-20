@@ -24,10 +24,20 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Verify production output
+        shell: bash
+        run: |
+          test -f dist/index.html
+          test -f dist/favicon.svg
+          grep -q '/assets/index-.*\.js' dist/index.html
+          grep -q '/assets/index-.*\.css' dist/index.html
+          ! grep -q '/src/main.tsx' dist/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
