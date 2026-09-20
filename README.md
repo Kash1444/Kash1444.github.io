@@ -1,4 +1,4 @@
-# Dharmaprakash — AI × Backend × Systems
+# Dharmaprakash — portfolio
 
 Personal portfolio website of **Dharmaprakash**, a Computer Science Engineering student focused on Artificial Intelligence, backend development, machine learning, and intelligent systems.
 
